@@ -39,7 +39,10 @@ module.exports = {
 
     const objectResource = this.provider.getObjectResource(artifactFilePath, filePath);
 
-    _.merge(resources, { [objectId]: objectResource });
+    if(resources[objectId] === undefined){
+      resources[objectId] = [];
+    }
+    resources[objectId].push(objectResource);
   },
 
   compileFunctionAndEvent(functionName, funcObject) {
