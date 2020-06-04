@@ -1,6 +1,6 @@
 {
   "name": "@xanthous/serverless-aliyun-function-compute",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "Provider plugin for the Serverless Framework v1.x which adds support for Aliyun Function Compute",
   "main": "index.js",
   "scripts": {
